@@ -457,11 +457,13 @@ header
 
 .reviews
   +clr
-  margin-top: 65px
-  padding-bottom: 60px
+  margin-top: 30px
+  padding-bottom: 140px
   h2
     margin-bottom: 35px
     text-align: center
+    color: black
+
 
   .reviews_in
     @extend %in
@@ -472,10 +474,10 @@ header
     position: relative
     display: inline-block
     margin-right: 42px
-    +border-radius(8px)
+    +border-radius(2px)
     +background-clip(padding-box)
     padding: 18px
-    background: #efefef
+    border: solid 2px #e5e5e5
     +box
     +clr
     &:last-child
@@ -484,19 +486,19 @@ header
       position: absolute
       content: ""
       bottom: -34px
-      left: 15px
+      left: 20px
       +s(review_popup)
 
     h3
-      color: #000
-      font-size: 18px
-      font-family: 'gotham_proregular'
-      text-transform: uppercase
+      color: #aa2828
+      font-size: 24px
+      font-family: 'pf_highway_sans_prothin'
+      text-transform: none
       margin-bottom: 10px
       font-weight: normal
     p
       +pfl
-      color: #3c3c3c
+      color: #1e1e1e
       font-size: 16px
 
 
@@ -593,7 +595,7 @@ footer
     font-size: 16px
     color: #787878
     a
-      color: #be0a0a
+      color: #c8965a
       &:hover
         text-decoration: none
 
