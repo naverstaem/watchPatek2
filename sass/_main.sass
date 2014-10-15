@@ -177,6 +177,7 @@ header
 .specs
   background: #000
   padding-top: 70px
+  padding-bottom: 10px
   +clr
   +box
   h2
@@ -191,11 +192,11 @@ header
     float: left
     width: 295px
     font-size: 16px
-    padding-bottom: 40px
+    padding-bottom: 18px
     +box
     &.short
-      margin-left: 140px
-      width: 200px
+      margin-left: 124px
+      width: 225px
       .specs__item
 
         &.title
@@ -277,21 +278,33 @@ header
     +background-image(linear-gradient(to left, #000 0%, #3b3b3b 45%, #d1b977 80%, #1d1d1d 100%))
     float: right
     border: none
-
+  &__text
+    float: right
+    text-align: left
+    color: #d2b978
+    font-size: 16px
+    +pfl
+    width: 480px
+    padding-right: 40px
+    line-height: 1.7em
 .photos
-  padding: 35px 0 70px 0
+  background: #000000
+  padding: 40px 0
   +box
   +clr
+  h2
+    color: #ffffff
+    margin-bottom: 20px
   .photos_in
     @extend %in
-    width: 980px
+    width: 960px
   .photo__item
     position: relative
     display: inline-block
     width: 300px
     height: 180px
     vertical-align: top
-    margin-right: 30px
+    margin-right: 25px
     &:last-child
       margin-right: 0
     span
@@ -311,15 +324,7 @@ header
         top: 50%
         left: 50%
         +transform(translate(-50%, -50%))
-      &:before
-        position: absolute
-        top: -13px
-        left: -14px
-        width: 320px
-        height: 200px
-        background: none
-        border: solid #e5e5e5 4px
-        content: ""
+
       &:hover
         +opacity(1)
     img
@@ -334,25 +339,25 @@ header
   height: 200px
   +transition(background, .5s)
   &:hover
-    +background-image(linear-gradient(to right, rgba(#fff,1), rgba(#fff,0)))
+    +background-image(linear-gradient(to right, rgba(#000,1), rgba(#000,0)))
   &:before
     position: absolute
     content: ""
     top: 38%
     left: 0
-    +s(prev)
+    //+s(prev)
 .slick-next
   right: 0
   left: auto
   &:hover
-    +background-image(linear-gradient(to right, rgba(#fff,0), rgba(#fff, 1)))
+    +background-image(linear-gradient(to right, rgba(#000,0), rgba(#000, 1)))
   &:before
     position: absolute
     content: ""
     top: 38%
     right: 5px
     left: auto
-    +s(next)
+    //+s(next)
 
 
 
@@ -373,7 +378,13 @@ header
     line-height: 1em
     text-transform: uppercase
   h2
-    color: white
+    color: #d2b978
+    font-size: 36px
+    font-family: 'pf_highway_sans_prothin'
+    line-height: 1.4em
+    span
+      font-family: 'pf_highway_sans_proextra_thin'
+      font-size: 72px
 
   .our_in
     @extend %in
@@ -396,7 +407,7 @@ header
     left: 50%
     +transform(translate(-50%, -50%))
     margin-top: 60px
-    margin-left: 35px
+    margin-left: 0px
     &:before
       position: absolute
       content: ""
@@ -407,7 +418,7 @@ header
     width: 600px
     margin: 55px auto 0
     position: relative
-    margin-left: 345px
+    margin-left: 215px
   &__price
     width: 180px
     display: inline-block
@@ -451,6 +462,7 @@ header
   h2
     margin-bottom: 35px
     text-align: center
+
   .reviews_in
     @extend %in
     +clr
@@ -495,30 +507,27 @@ header
   padding-bottom: 40px
   .order_in
     @extend %in
-    width: 945px
   h2
     margin-bottom: 40px
     text-align: center
+    color: #000000
   &__item
-    background: url("../img/order-item_bg--second.jpg") no-repeat
+    background: url("../img/order-item_bg.jpg") no-repeat
     vertical-align: top
     width: 300px
     height: 500px
     text-align: center
     padding-top: 25px
     display: inline-block
-    margin-right: 18px
-    &.item--first
-      background: url(../img/order-item_bg--first.jpg) no-repeat
-    &.item--third
-      background: url(../img/order-item_bg--third.jpg) no-repeat
+    margin-right: 45px
+
     +box
     &:last-child
       margin-right: 0
   &__caption
     font-size: 24px
-    font-family: 'gotham_proregular'
-    margin-bottom: -5px
+    font-family: 'pf_highway_sans_prothin'
+    margin-bottom: 5px
     color: #000
     text-transform: uppercase
   &__img
@@ -534,10 +543,10 @@ header
 
 
     h3
-      font-family: 'code_pro_lcregular'
+      font-family: 'code_proregular'
       font-size: 24px
       font-weight: normal
-      color: #be0a0a
+      color: #aa2828
       span
         font-family: 'als_rublregular'
 
@@ -547,13 +556,21 @@ header
     color: #787878
     text-align: left
   &__form
-    margin-top: 0px
+    margin-top: 5px
     input
       width: 250px
       margin-bottom: 10px
       border: 2px solid #dbdbdb
       +border-radius(4px)
     .button
+      font-size: 24px
+      float: none
+      padding: 11px 56px
+      +box-shadow(inset 0 -2px 0 rgba(106, 18, 18, 0.90))
+      &:hover
+        +box-shadow(0 0 0 0)
+
+
 
 
 
