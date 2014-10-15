@@ -170,57 +170,12 @@ header
     height: 0
 
 
-.history
-  padding: 40px 0
-  background: #000
-  +box
-  +clr
-  .history_in
-    @extend %in
-
-    +clr
-  .history__block
-    margin-top: 0
-    background: #ffffff
-    +clr
-
-    .history__block--left
-      float: left
-      width: 680px
-      +clr
-      padding: 50px 0 0 30px
-      p
-        margin-top: 32px
-        font-size: 18px
-        color: #000
-        +pfl
-        line-height: 1.8em
-        padding-right: 20px
-
-    .history__block--right
-      float: right
-      width: 265px
-      +clr
-      a
-        text-decoration: none
-        color: inherit
-
-      .history__img
-        position: relative
-        display: block
-        width: 265px
-        height: 420px
-        text-align: center
-        +clr
-
-        img
-          display: block
 
 
 
 
 .specs
-  background: #ffffff
+  background: #000
   padding-top: 70px
   +clr
   +box
@@ -228,7 +183,7 @@ header
     margin-bottom: 50px
   .specs_in
     @extend %in
-    width: 960px
+    width: 925px
     +clr
     h2
       margin-left: 40px
@@ -239,10 +194,10 @@ header
     padding-bottom: 40px
     +box
     &.short
-      margin-left: 30px
+      margin-left: 140px
       width: 200px
       .specs__item
-        margin-top: 0
+
         &.title
           margin-bottom: 28px
         .specs__price
@@ -259,41 +214,40 @@ header
 
 
   &__item
-    color: #1e1e1e
+    color: #787878
     margin-top: 28px
     font-family: 'conv_pfdintextcondpro-light'
-    font-size: 18px
+    font-size: 16px
     &:first-child
       margin-top: 0
     &.title
-      font-family: 'gotham_proregular'
       color: #8c0a0a
       font-size: 18px
 
 
 
     span
-      color: #1e1e1e
-      font-size: 16px
-      text-transform: none
+      color: #ffffff
+      font-size: 18px
+      text-transform: uppercase
 
   &__watch
-    margin-top: -35px
+    margin-top: 0px
     position: relative
-    float: right
-    width: 260px
-    margin-right: 60px
+    float: left
+    width: 280px
+    margin-right: 0px
 
     img
-      width: 260px
-      height: 440px
+      width: 280px
+      height: 530px
       position: relative
       display: block
     .prev
       position: absolute
       content: ""
       +s(prev)
-      top: 43%
+      top: 39%
       left: -60px
       cursor: pointer
 
@@ -301,24 +255,28 @@ header
       position: absolute
       content: ""
       +s(next)
-      top: 43%
+      top: 39%
       right: -60px
       cursor: pointer
 
     .threesixty
       position: absolute
       text-align: center
-      padding-top: 35px
+      padding-top: 47px
       +box
-      top: -5px
-      right: 240px
+      top: 0px
+      right: -80px
       +s(360)
-      font-size: 30px
-      color: #000
+      font-size: 36px
+      color: #d2b978
       content: ""
-      font-family: 'code_pro_boldregular'
-
-
+      font-family: 'bebas_neue_regularregular'
+  hr
+    width: 520px
+    height: 2px
+    +background-image(linear-gradient(to left, #000 0%, #3b3b3b 45%, #d1b977 80%, #1d1d1d 100%))
+    float: right
+    border: none
 
 .photos
   padding: 35px 0 70px 0
